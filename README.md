@@ -1,3 +1,5 @@
+Live Netlify Site Link: https://d280-interactive-map.netlify.app/
+
 # D280 APP PA
 Student Name: Christopher Whaley
 
@@ -13,26 +15,42 @@ OS: linux x64
 
 Angular: 18.0.6
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Throughout your career in software engineering, you will be asked to enhance website functionality using JavaScript programming in conjunction with existing frameworks, assets, and web content. For this assessment, you will enhance a website using the Angular JavaScript framework and an application programming interface (API) by creating a visual interface for a scalable vector graphics (SVG) map.
 
-## Code scaffolding
+The skills you demonstrate in this task will be useful in responding to technical interview questions for future employment. This website may also be added to your portfolio.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Your submission should include a link to the project that contains a copy of the repository branch history file and the URL to the GitLab repository for evaluation. The submission must keep the project file and folder structure intact for the integrated development environment (IDE).
 
-## Build
+## Whats included in the project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+A.   Using an "SVG Map" web link, provide the world map visual interface for this project in the ipplication.
 
-## Running unit tests
+B.   Using the "World Bank API" web link, identifies each of the following six properties for each country:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+      1. Country Name (e.g. United States)
 
-## Running end-to-end tests
+      2. Country Capital (e.g. Washington D.C.)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+      3. Region (e.g. North America)
 
-## Further help
+      4. Income Level (e.g. High Income)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+      5. Longitude (e.g. -77.032)
+
+      6. Latitude (e.g. 38.8895)
+
+C.   Using Angular routing, configures the root component to redirect automatically from the default URL.
+
+D.   Creates an HTML layout with two columns: one column for the map itself and one column to show the required country information from the API in part B.
+
+E.   Uses an event binding, converting the SVG map into an interactive Angular component.
+
+F.   Connects the SVG file to a mouse event handler to transmit data to the component for processing.
+
+G.   Generates an API service using HTTPClient to make HTTP calls and includes the following methods:
+
+      1. one method within the service that accepts a two-letter country code as an input parameter that returns additional information gathered from the API for the selected country
+      
+      2. one method within the component that will trigger the service method when a country is selected and set a local variable that will receive the information about the country for display in the appropriate column of the HTML page
